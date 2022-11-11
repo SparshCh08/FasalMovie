@@ -1,9 +1,9 @@
 import axios from 'axios';
-
+// const BASE_URL = "localhost:3500"
 const OMDB_API = 'https://www.omdbapi.com'
 const OMDB_API_KEY = "a6c35cd0"
 
-const BASE_URL = "https://e704-103-69-39-55.in.ngrok.io/";
+const BASE_URL = "https://e127-103-69-39-55.in.ngrok.io/";
 
 
 
