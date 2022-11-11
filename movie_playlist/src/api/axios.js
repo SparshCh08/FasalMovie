@@ -1,7 +1,9 @@
 import axios from 'axios';
-const BASE_URL = 'http://localhost:3500';
-const OMDB_API = 'http://www.omdbapi.com'
-const OMDB_API_KEY="a6c35cd0"
+let BASE_URL = 'http://localhost:3500';
+const OMDB_API = 'https://www.omdbapi.com'
+const OMDB_API_KEY = "a6c35cd0"
+if (process.env.AB === "prod")
+    BASE_URL = "https://e704-103-69-39-55.in.ngrok.io/";
 
 export default axios.create({
     baseURL: BASE_URL
@@ -26,7 +28,7 @@ export const getMovies = async (title) => {
                 apiKey: OMDB_API_KEY,
                 s: title,
             }
-        } 
+        }
     )
     console.log("aajaaa       ", response.data)
     return response.data
@@ -40,7 +42,7 @@ export const getOneMovie = async (title) => {
                 apiKey: OMDB_API_KEY,
                 i: title,
             }
-        } 
+        }
     )
     console.log("aajaaa       ", response.data)
     return response.data

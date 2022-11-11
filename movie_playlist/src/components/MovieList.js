@@ -18,7 +18,7 @@ const MovieList = ({ playlists }) => {
 
     }, [playlists])
     console.log('in movie', playlists)
-    return (<>yoiyo</>)
+    return (<></>)
     // if (!props?.movies) {
     //     return (<>Nahi h bhai kuch bhi sorry please kal aana </>)
     // }
