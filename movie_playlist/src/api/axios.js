@@ -1,10 +1,10 @@
 import axios from 'axios';
-let BASE_URL = 'http://localhost:3500';
+
 const OMDB_API = 'https://www.omdbapi.com'
 const OMDB_API_KEY = "a6c35cd0"
-if (process.env.AB === "prod") {
-    BASE_URL = "https://e704-103-69-39-55.in.ngrok.io/";
-}
+
+const BASE_URL = "https://e704-103-69-39-55.in.ngrok.io/";
+
 
 
 export default axios.create({
